@@ -21,4 +21,14 @@ public class HelloController {
         return "index";
     }
 
+    @RequestMapping("/hello")
+    public String hello() throws Exception {
+        throw new Exception("发生错误");
+    }
+
+    @RequestMapping("/json")
+    public String json() throws MyException {
+        throw new MyException("有错了");
+    }
+
 }
