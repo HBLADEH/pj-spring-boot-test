@@ -21,6 +21,8 @@ public class HelloController {
         return "index";
     }
 
+
+
     @RequestMapping("/hello")
     public String hello() throws Exception {
         throw new Exception("发生错误");
